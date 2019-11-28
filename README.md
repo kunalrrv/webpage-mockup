@@ -1,5 +1,7 @@
 # Simple Vue Application 
 - This application has been created as a part of LogDNA Coding Challange.
+- Reference Mockup below: 
+![Mockup](doc/test-mockup.png)
 
 ## Project setup
 ```
