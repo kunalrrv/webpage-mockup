@@ -1,0 +1,26 @@
+@import '_css-reset.scss';
+
+/**
+* GLobal CSS Declarations
+*/
+body {
+    padding-left: 100px;
+    padding-top: 100px;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+// Color Declarations
+$brand-pink: #DB075A;
+$border-color: #e2e2e2;
+
+// Stylesheet Imports
+@import '_sidebar.scss';
+
+// Other Generic CSS
+a:hover {
+    cursor: pointer;
+}

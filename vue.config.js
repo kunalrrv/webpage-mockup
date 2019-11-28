@@ -1,9 +1,10 @@
+/* eslint-disable quotes */
 // vue.config.js
 module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        prependData: '@import "@/styles/app.scss";',
+        prependData: `@import "@/styles/app.scss";`,
       },
     },
   },

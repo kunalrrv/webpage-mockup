@@ -1,0 +1,46 @@
+.sidebar-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #0B0B0B;
+    color: #ffffff;
+
+    .logo-container {
+        height: 100px;
+        img {
+            max-width: 100px;
+            height: 80px;
+            padding: 10px 0;
+        }
+    }
+
+    .navigation {
+        ul {
+            li {
+                position: relative;
+                padding: 10px;
+                &.active::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $brand-pink;
+                    left: 0px;
+                    top: (50% - 20);
+                    border-top-right-radius: 50%;
+                    border-bottom-right-radius: 50%;
+                }
+
+                a {
+                    display: block;
+                    img {
+                        border-radius: 10px;
+                        padding: 0 0 3px 0;
+                    }
+                }
+            }
+        }
+    }
+}
