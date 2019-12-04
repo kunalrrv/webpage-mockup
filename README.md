@@ -23,5 +23,8 @@ npm run build
 npm run lint
 ```
 
+### Live Demo Link
+[Here](https://kunalrrv.github.io/webpage-mockup/)
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
