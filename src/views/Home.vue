@@ -55,18 +55,30 @@ export default {
   name: 'home',
   data() {
     return {
-      message: '',
+      message: '', // Data binding to hold the input value.
     };
   },
   methods: {
+    /**
+     * @description This function takes the data attribute `message`,
+     * checks if the input value is empty, if empty then throw error,
+     * else successfully show the message.
+     */
     primaryAction() {
-      if (this.message === '' || this.message === 'error') {
-        alert('Input Error, Please enter correct input');
+      try {
+        if (this.message === '' || this.message === 'error') {
+          const error = {
+            message: 'Input Error, Please enter correct input',
+          };
+          throw (error);
+        } else {
+          alert(`Message Submitted Successfully: ${this.message}`);
+          this.message = '';
+        }
+      } catch (e) {
+        alert(e.message);
         this.message = '';
         document.querySelector('#message-input').focus();
-      } else {
-        alert(`Message Submitted Successfully: ${this.message}`);
-        this.message = '';
       }
     },
   },
