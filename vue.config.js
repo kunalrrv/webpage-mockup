@@ -1,7 +1,9 @@
 /* eslint-disable quotes */
 // vue.config.js
 module.exports = {
-  publicPath: 'webpage-mockup',
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/webpage-mockup/'
+  : '/'
   css: {
     loaderOptions: {
       sass: {
