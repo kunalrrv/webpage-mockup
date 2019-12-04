@@ -1,6 +1,7 @@
 /* eslint-disable quotes */
 // vue.config.js
 module.exports = {
+  publicPath: 'webpage-mockup',
   css: {
     loaderOptions: {
       sass: {
