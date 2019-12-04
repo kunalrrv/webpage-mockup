@@ -2,8 +2,8 @@
 // vue.config.js
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/webpage-mockup/'
-  : '/'
+    ? '/webpage-mockup/'
+    : '/',
   css: {
     loaderOptions: {
       sass: {
